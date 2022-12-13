@@ -1,0 +1,80 @@
+
+
+// social 
+// <div class="socialGroup">
+//   <ul>
+//     <li class="socialGroup__facebook">
+//       <a href="https://www.facebook.com/sharer/sharer.php?u=https://shopping.udn.com/udnmall/hot/精品皮夾_20200831.html?utm_source=fb&utm_medium=hot&utm_campaign=the-best-luxury-wallet-brands"
+//         target="_blank" rel="noreferrer noopener" alt="分享至facebook" title="分享至facebook">
+//         <img src="./assets/images/icon-fb.svg" class="icon icon-FB" alt="分享至facebook">
+//       </a>
+//     </li>
+//     <li class="socialGroup__line">
+//       <a href="javascript: void(window.open('https://lineit.line.me/share/ui?url=' .concat(encodeURIComponent(&quot;https://shopping.udn.com/udnmall/hot/精品皮夾_20200831.html?utm_source=lineshare&utm_medium=hot&utm_campaign=the-best-luxury-wallet-brands&quot;)) ));"
+//         alt="分享至LINE" title="分享至LINE">
+//         <img src="./assets/images/icon-line.svg" class="icon icon-Line" alt="分享至LINE">
+//       </a>
+//     </li>
+//   </ul>
+// </div>
+
+//*-------------------------*/
+//* social
+//*-------------------------*/
+
+.socialGroup{
+  width: auto;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 500;
+  @media screen and (max-width: $mq768) {
+    top: 1%;
+    right: 1.5%;     
+  }
+  ul{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+  }
+  li{
+    margin-right: 15px;
+    &.socialGroup__facebook a {
+      background-color: #3564a2;
+    }
+    &.socialGroup__line a {
+      background-color: #00c300;
+    }
+    @media screen and (max-width: $mq768) {
+      margin-right: 8px;        
+    }
+  }
+  li:last-child{
+    margin-right: 0px;
+  }
+  a{
+    @include width(40px , 40px);
+    display: block;
+    border-radius: 10px;
+    box-sizing:border-box;
+    text-align: center;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: $mq768) {
+      @include width(35px , 35px);       
+    }
+    &:hover{
+      filter: brightness(120%);
+    }
+    .icon{
+      @include width(30px , 30px);
+      /* 抵銷後台 */
+      margin: 0;
+      @media screen and (max-width: $mq768) {
+        @include width(25px , 25px);       
+      }
+    }
+  }
+}

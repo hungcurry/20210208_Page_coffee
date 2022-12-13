@@ -1,0 +1,907 @@
+
+:focus {
+  outline: 0;
+}
+* {
+  // outline: 0.1rem solid red;
+}
+.guideWrap * {
+  font-family: "Noto Sans TC" , -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  position: relative;
+  box-sizing: border-box;
+}
+.guideWrap{
+  overflow: hidden;
+  .main{
+    width: 100%;
+    margin: auto;
+  }
+  // 排版用div
+  .outer{
+    width: 100%;
+  }
+  .contentGroup{
+    width: 100%;
+  }
+  // 區塊顯示
+  .section01{
+    // display: none;
+  }
+  .section02{
+    // display: none;
+  }
+  .section03{
+    // display: none;
+  }
+  .boxBlock01{
+    // display: none;
+  }
+  .boxBlock02{
+    // display: none;
+  }
+  .boxBlock03{
+    // display: none;
+  }
+  .moreActivity{
+    // display: none;
+  }
+}
+//*-------------------------*/
+//* topMain
+//*-------------------------*/
+.topMain {
+  @include bgUrl(url('../../assets/images/top-768.jpg'));
+  height: 0rem;
+  padding-bottom: 100%;
+  margin: auto;
+  @media screen and (min-width: $mq1024) {
+    max-width: 192rem;
+    height: 70rem;
+    padding-bottom: 0;
+    background-image: url('../../assets/images/top.jpg');
+    background-position-x: 47.5%; // 45%
+  }
+  .container{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+  .row{
+    height: 100%;
+  }
+//* logo
+//*-------------------*/
+  .udnLOGO {
+    display: block;
+    z-index: 99;
+    position: absolute;
+    width: calc(139 / 640 * 100%);
+    left: 2%;
+    top: 1.5%;
+    @media screen and (min-width: $mq768) {
+      width: calc(139 / 1200 * 100%);
+      left: calc(40 / 1200 * 100%);
+      top: calc(15 / 1200 * 100%);
+    }
+    .udnLogo__img {
+      display: block;
+      width: 100%;
+      height: 0;
+      background-size: 100% auto;
+      padding-bottom: calc(293 / 797 * 100%);
+      background-image: url('https://img.udn.com/art/2019_logo/images/new_udnlogo_01.svg');
+    }
+  }
+}
+//*-------------------------*/
+//* section
+//*-------------------------*/
+.section{
+  background-color: $white ;
+  @media screen and (min-width: $mq1200) {
+    // box-shadow: 0px 0.5rem 1.5rem rgba(0, 0, 0, 0.3) ;
+  }
+  // ?區塊一
+  &.section01{
+    @media screen and (min-width: $mq768) {
+
+    }
+    @media screen and (min-width: $mq1200) {
+      // margin-bottom: 20rem; 
+    }
+  }
+  // ?區塊二
+  &.section02{
+    @media screen and (min-width: $mq768) {
+
+    }
+    @media screen and (min-width: $mq1200) {
+      // padding-bottom: 9.3rem;
+      // margin-bottom: 11.5rem;
+    }
+    // 偽元素外框
+    &:before{
+      @media screen and (min-width: $mq1200) {
+        // content: "";
+        // display: block;
+        // width: 117%;
+        // max-width: 165rem;
+        // height: 100.5%;
+        // position: absolute;
+        // top: 2.8rem;
+        // left: 50%;
+        // transform: translateX(-50%);
+        // background-color: $primary ;
+        // z-index: -1;
+      }
+    }
+  }
+  // ?區塊三
+  &.section03{
+    @media screen and (min-width: $mq768) {
+
+    }
+    @media screen and (min-width: $mq1200) {
+      // background-color: transparent;
+      // margin-bottom: 4rem;
+      // box-shadow: 0 0 0 rgba(0, 0, 0, 0.0) ;
+    }
+  }
+  // ?區塊四
+  &.section04{
+    @media screen and (min-width: $mq768) {
+      // margin-bottom: 3rem;
+    }
+    @media screen and (min-width: $mq1200) {
+      // padding-top: 5rem;
+      // margin-bottom: 7rem;
+    }
+    // 偽元素外框
+    &:before{
+      @media screen and (min-width: $mq1200) {
+        // content: "";
+        // display: block;
+        // width: 117%;
+        // max-width: 165rem;
+        // height: 97%;
+        // position: absolute;
+        // top: 11rem;
+        // left: 50%;
+        // transform: translateX(-50%);
+        // background-color: $primary ;
+        // z-index: -1;
+      }
+    }
+  }
+}
+//*-------------------------*/
+//* boxBlock
+//*-------------------------*/
+.boxBlock{
+  @include width (100% , auto);
+  max-width: 100%;
+  margin: 0 auto;
+  background-position: center 0rem;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  @media screen and (min-width: $mq1200) {
+    max-width: 192rem;
+    background-size: 132rem auto;
+  }
+// ?boxBlock01
+  &.boxBlock01{
+    &.row{
+      background-image: url('../../assets/images/BOXM1-1_BG.png');
+      @media screen and (min-width: $mq480) {
+        background-image: none;
+      }
+      @media screen and (min-width: $mq1200) {
+        background-image: url('../../assets/images/BOXW1-1_BG.png');
+      }
+      // 手機圖片位置
+      .col-imgBox{
+        margin-top: 2vw;
+        @media screen and (min-width: $mq480) {
+          margin-top: 0;
+        }
+      }
+    }
+    &.row-reverse{
+      background-image: url('../../assets/images/BOXM1-2_BG.png');
+      @media screen and (min-width: $mq480) {
+        background-image: none;
+      }
+      @media screen and (min-width: $mq1200) {
+        background-image: url('../../assets/images/BOXW1-2_BG.png');
+      }
+      // 手機圖片位置
+      .col-imgBox{
+        margin-top: 2vw;
+        @media screen and (min-width: $mq480) {
+          margin-top: 0;
+        }
+      }
+    }
+    &.row-secondary{
+      background-image: url('../../assets/images/BOXM1-1_BG.png');
+      @media screen and (min-width: $mq480) {
+        background-image: none;
+      }
+      @media screen and (min-width: $mq1200) {
+        background-image: url('../../assets/images/BOXW1-3_BG.png');
+      }
+      // 手機圖片位置
+      .col-imgBox{
+        margin-top: 2vw;
+        @media screen and (min-width: $mq480) {
+          margin-top: 0;
+        }
+      }
+    }
+    &.row-reverse-secondary{
+      background-image: url('../../assets/images/BOXM1-2_BG.png');
+      @media screen and (min-width: $mq480) {
+        background-image: none;
+      }
+      @media screen and (min-width: $mq1200) {
+        background-image: url('../../assets/images/BOXW1-4_BG.png');
+      }
+      // 手機圖片位置
+      .col-imgBox{
+        margin-top: 2vw;
+        @media screen and (min-width: $mq480) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+// ?boxBlock02
+  &.boxBlock02{
+    &.row{
+      // background-image: url('../../assets/images/BOXM1-3_BG.png');
+      @media screen and (min-width: $mq480) {
+        background-image: none;
+      }
+      @media screen and (min-width: $mq1200) {
+        background-image: url('../../assets/images/BOXW1-5_BG.png');
+      }
+      // 手機圖片位置
+      .col-imgBox{
+        margin-top: 0vw;
+        @media screen and (min-width: $mq480) {
+          margin-top: 0;
+        }
+      }
+    }
+    &.row-reverse{
+      background-image: url('../../assets/images/BOXM1-1_BG.png');
+      @media screen and (min-width: $mq480) {
+        background-image: none;
+      }
+      @media screen and (min-width: $mq1200) {
+        background-image: url('../../assets/images/BOXW1-2_BG.png');
+      }
+      // 手機圖片位置
+      .col-imgBox{
+        margin-top: 0vw;
+        @media screen and (min-width: $mq480) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+// ?boxBlock03
+  &.boxBlock03{
+    &.row{
+      background-image: url('../../assets/images/BOXM1-4_BG.png');
+      @media screen and (min-width: $mq480) {
+        background-image: none;
+      }
+      @media screen and (min-width: $mq1200) {
+        background-image: url('../../assets/images/BOXW1-5_BG.png');
+      }
+      // 手機圖片位置
+      .col-imgBox{
+        margin-top: 4vw;
+        @media screen and (min-width: $mq480) {
+          margin-top: 0;
+        }
+      }
+    }
+    &.row-reverse{
+      background-image: url('../../assets/images/BOXM1-4_BG.png');
+      @media screen and (min-width: $mq480) {
+        background-image: none;
+      }
+      @media screen and (min-width: $mq1200) {
+        background-image: url('../../assets/images/BOXW1-6_BG.png');
+      }
+      // 手機圖片位置
+      .col-imgBox{
+        margin-top: 4vw;
+        @media screen and (min-width: $mq480) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+//*-------------------------*/
+//* 介紹文字
+//*-------------------------*/
+.articleText {
+  padding: 2rem 0 2rem 0;
+  position: relative;
+  z-index: 5;
+  @media screen and (min-width: $mq768) {
+    // margin-top: -4.2rem;
+  }
+  @media screen and (min-width: $mq1200) {
+    padding: 2rem 0 0;
+  }
+  // 符號
+  .symbol {
+    @include width(5.2rem , 5.2rem);
+    margin: auto;
+    margin-bottom: 1.5rem;
+    @media screen and (min-width: $mq768) {
+      @include width(7.2rem ,7.2rem);
+    }
+  }
+  // 文字
+  .articleText__txt {
+    margin: 0 auto;
+    padding: 3% 0 0;
+    @media screen and (min-width: $mq768) {
+      @include fontSize(2rem , 1.7);
+      padding: 0 ;
+      text-align: center;
+    }
+  }
+  // ?文案第二區
+  &.secondary{
+    padding: 0rem 0 3rem 0;
+    @media screen and (min-width: $mq768) {
+
+    }
+    @media screen and (min-width: $mq1200) {
+      background-color: transparent;
+      padding: 0;
+    }
+    .articleText__txt{
+      text-align: left;
+      padding: 0;
+      @media screen and (min-width: $mq768) {
+        @include fontSize(2rem , 1.7);
+      }
+    }
+  }
+  // ?文案第三區
+  &.thirdly{
+    padding: 0rem 0 3rem 0;
+    @media screen and (min-width: $mq768) {
+
+    }
+    @media screen and (min-width: $mq1200) {
+      background-color: transparent;
+      padding: 6rem 0 2rem 0; 
+    }
+    .articleText__txt{
+      @media screen and (min-width: $mq768) {
+        @include fontSize(2rem , 1.7);
+      }
+    }
+  }
+}
+//*-------------------------*/
+//* mainTitle
+//*-------------------------*/
+.mainTitle{
+  .numberImg{
+    &.numberImg01{
+      @media screen and (min-width: $mq1200) {
+
+      }
+    }
+    &.numberImg02{
+      @media screen and (min-width: $mq1200) {
+        padding-left: 8.3333%;
+      }
+    }
+  }
+  // outer虛線
+  .outer::before{
+    // content: "";
+    // @include width(100% , 100%);
+    // background-color: transparent;
+    // border-radius: 5rem;
+    // border: 0.3rem dotted $border-primary-dash;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // transform: translate(-0.6rem , -1rem);
+    // z-index: 10;
+    // @media screen and (min-width: $mq768) {
+    //   transform: translate(-1rem , -0.8rem);
+    //   border: 0.5rem dotted $border-primary-dash;
+    // }
+    // @media screen and (min-width: $mq1200) {
+    //   transform: translate(-2rem , -1.5rem);
+    // }
+  }
+  // contentTitle 副標 h2 
+  .contentTitle{
+    text-align: center;
+    // background-color: $bg-secondary;
+    // border-radius: 3rem 3rem 0rem 0rem; // 3rem 3rem 0 0
+    // padding-top: 1rem;
+    @media screen and (min-width: $mq768) {
+      // padding-top: 0rem; // 3rem
+      // font-size: 0rem;  // 4rem
+      // border-radius: 3rem 3rem 0rem 0rem; // 3rem 3rem 0 0
+    }
+    // 偽元素
+    &:before,
+    &:after{
+      content: "";
+      width: 100%;
+      // background-color: $secondary ;
+      position: absolute;
+      left: 0;
+      z-index: 1;
+      @media screen and (min-width: $mq768) {
+  
+      }
+    }
+    // 粗線
+    &::before{
+      // height: 0.3rem;
+      // top: 2.5rem;
+      top: 50%;
+      transform: translate(0% , -50%);
+      border: .1rem dashed $primary;
+      @media screen and (min-width: $mq768) {
+
+      }
+    }
+    // 細線
+    &::after{
+      // height: 0.2rem;
+      // top: 50%;
+      // transform: translate(0% , -50%);
+      // // bottom: 40%;
+      // // display:none;
+      // @media screen and (min-width: $mq768) {
+      //   // top: auto;
+      //   // bottom: 2.5rem;
+      // }
+    }
+  }
+  // span
+  .contentTitle__text {
+    @include width(100% , 6.4rem); // 100% 6.4rem
+    @include rfs (3.6rem); // 3.6rem
+    letter-spacing: 0.5rem; // 0.2rem
+    line-height: 6.4rem; // 6.4rem
+    // border-radius: 3.2rem;
+    display: inline-block;
+    color: $white;
+    background-color: $primary ;
+    font-weight: 500;
+    padding: 0 2%;
+    position: relative;
+    z-index: 5;
+    @media screen and (min-width: $mq768) {
+      // @include fontSize(3.6rem , 1.8);
+      height: auto;
+      padding: 0 2rem; // 0 2rem
+     @include width(100% , 6.4rem); // 100% 6.4rem
+     // line-height: 6.4rem; // 6.4rem
+    }
+    @media screen and (min-width: $mq1024) {
+      width: 46rem; // 60rem
+      // border-left: 1rem solid $white;
+      // border-right: 1rem solid $white;
+    }
+    @media screen and (min-width: $mq1200) {
+      // width: 55rem; // 60rem
+    }
+    // span-sm 
+    &.contentTitle__text-sm {
+      @include fontSize(4.7vw , 6.4rem);
+      letter-spacing: 0rem;
+      @media screen and (min-width: $mq768) {
+        @include fontSize(3.6rem , 1.8);
+      }
+      @media screen and (min-width: $mq1024) {
+        width: auto;
+      }
+    }
+  }
+  // span虛線
+  span::before{
+    // content: "";
+    // @include width(100% , 100%);
+    // background-color: transparent;
+    // border-radius: 5rem;
+    // border: 0.2rem dashed $border-primary-dash;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // transform: translate(0.6rem , 1rem);
+    // z-index: 1;
+    // pointer-events: none; // 穿透
+    // @media screen and (min-width: $mq768) {
+    //   transform: translate(1rem , 0.8rem);
+    //   border: 0.2rem dashed $border-primary-dash;
+    // }
+    // @media screen and (min-width: $mq1200) {
+    //   transform: translate(1.5rem , 1rem);
+    // }
+  }
+  // 綴字
+  .suffix{
+    @include rfs (2.2rem);
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    @media screen and (min-width: $mq768) {
+      padding: 0 2.5rem;
+    }
+    @media screen and (min-width: $mq1024) {
+      @include rfs (2.4rem);
+      letter-spacing: 0.3rem;
+      width: 100%;
+    }
+  }
+  // 引言
+  .foreWord{
+    position: relative;
+    z-index: 5;
+    margin: auto;
+    // border-top-width: 0rem;
+    // padding: 2rem 1.5rem;
+    @media screen and (min-width: $mq768) {
+      font-size: 2rem;
+      text-align: center;
+      // border-radius: 0 0 3rem 3rem;
+      // border: 0.6rem solid #000 ;
+    }
+    @media screen and (min-width: $mq1200) {
+      padding: 0 5.3rem; // 3rem
+    }
+  }
+  // contentSubTitle 副標 h3 
+  .contentSubTitle{
+    @include rfs(2.8rem);
+    line-height: 1.5;
+    // @include fontSize(5vw , 1.5);
+    border-bottom: 0.1rem solid $gray-400;
+    @media screen and (min-width: $mq768) {
+      // @include fontSize(2.8rem , 1.5);
+    }
+  }
+  .subTitle__icon{
+    @include width(4.6rem , 4.6rem);
+    margin-left: 1rem;
+    @media screen and (min-width: $mq768) {
+
+    }
+  }
+  // ?副標第二區
+  &.secondary{
+    .contentTitle{
+      // 偽元素
+      &:before,
+      &:after{
+        background-color: $primary;
+        @media screen and (min-width: $mq768) {
+    
+        }
+      }
+    }
+    // 引言 
+    .foreWord{
+      @media screen and (min-width: $mq1200) {
+        padding: 0 16rem; // 3rem
+      }
+    }
+  }
+}
+//*-------------------------*/
+//* subTitle
+//*-------------------------*/
+.subTitle{
+  // contentSubTitle 副標 h3 
+  .contentSubTitle{
+    // @include fontSize(1.6rem , 1.7);
+    @include rfs (2.6rem);
+    line-height: 1.5;
+    text-align: left;
+    color: $black;
+    font-weight: 500;
+    @media screen and (min-width: $mq768) {
+      @include rfs (3rem);
+    }
+  }
+  .subTitle__icon{
+    @include width(3.2rem , 4.5rem); // 6rem
+    margin-right: 1rem;
+    @media screen and (min-width: $mq768) {
+      margin-right: 1.5rem;
+      // @include width(11.3rem , 11.3rem);
+    }
+  }
+}
+//* contentBody
+//*-------------------*/
+.contentBody{
+  padding-top: 3rem; // 3rem
+  margin-bottom: 4rem; 
+  @media screen and (min-width: $mq360) {
+    // padding-top: 2rem; // 4rem
+  }
+  @media screen and (min-width: $mq540) {
+    padding-top: 0rem;
+  }
+  @media screen and (min-width: $mq768) {
+    margin-bottom: 5rem; // 5rem
+  }
+  @media screen and (min-width: $mq1200) {
+    // margin-bottom: 4.5rem; 
+  }
+  // !第二區 有相接文案的 尺寸距離比較少
+  &.contentBody-sm{
+    margin-bottom: 1.5rem; // 2rem
+    @media screen and (min-width: $mq540) {
+      // margin-bottom: 3rem;
+    }
+    @media screen and (min-width: $mq768) {
+      margin-bottom: 5rem;
+    }
+    @media screen and (min-width: $mq1200) {
+    // margin-bottom: 4.5rem; 
+    }
+  }
+}
+// 文案主標 h3
+.productTitle {
+  @include rfs(2.8rem);
+  line-height: 1.5;
+  // @include fontSize(2.2rem , 1.5);
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  color: $black;
+  border-bottom: 0.1rem solid $gray-400;
+  padding-bottom: 1.5rem; // 2rem
+  margin-bottom: 1.5rem; // 2rem
+  @media screen and (min-width: $mq375) {
+    // @include fontSize(6vw , 1.5); 
+  }
+  @media screen and (min-width: $mq768) {
+    @include rfs(3rem);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+  @media screen and (min-width: $mq1024) {
+    border-bottom: 0rem solid $gray-400;
+    padding-bottom: 0rem;
+  }
+}
+// 商品品名 h4 
+.productName{
+  @include rfs(3rem);
+  line-height: 1.5;
+  // @include fontSize(2.2rem , 1.5);
+  width: 100%;
+  font-weight: bold;
+  border-bottom: 0.1rem solid $gray-400;
+  padding-bottom: 1.5rem; // 2rem
+  margin-bottom: 0rem; // 2rem
+  @media screen and (min-width: $mq768) {
+    // @include fontSize(3rem , 1.5);
+    padding-bottom: 1rem;
+    // margin-bottom: 1rem;
+  }
+  @media screen and (min-width: $mq1024) {
+    border-bottom: 0rem solid $gray-400;
+    padding-bottom: 0rem;
+  }
+}
+// 描述 / 品牌名 h5 
+.productDescription,
+.productBrand{
+  @include rfs(2.2rem);
+  line-height: 1.5;
+  // @include fontSize(2.2rem , 1.5);
+  width: 100%;
+  font-weight: bold;
+  @media screen and (min-width: $mq768) {
+    // @include fontSize(2.8rem , 1.5);
+  }
+}
+// 圖片區塊
+.col-imgBox{
+  z-index: 5;
+  position: relative;
+  @media screen and (min-width: $mq768) {
+    padding: 0;
+  }
+  @media screen and (min-width: $mq992) {
+    padding: 0 1.5rem;
+  }
+  @media screen and (min-width: $mq1200) {
+    // padding-bottom: 5.818rem;
+  }
+  // 桌機圖片位置
+  .productPic{
+    margin: auto;
+    @media screen and (min-width: $mq1200) {
+      &.productPic01{
+        // margin-bottom: 2rem;
+      }
+      &.productPic02{
+        // margin-bottom: 8.7rem;
+      }
+    }
+  }
+}
+// 圖片區塊 padding
+.col-imgBox-pd{
+  z-index: 5;
+  padding-left: 0;
+  padding-right: 0;
+  @media screen and (min-width: $mq768) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  @media screen and (min-width: $mq1200) {
+    padding-top: calc(650 / 1200 * 100%);
+  }
+  // 桌機圖片位置
+  .productPic{
+    margin: auto;
+    @media screen and (min-width: $mq1200) {
+      position: absolute;
+      &.productPic01{
+        top: 0;
+        left: 0;
+      }
+      &.productPic02{
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+}
+// 文字區塊
+.col-txtBox{
+  z-index: 5;
+  position: relative;
+  @media screen and (min-width: $mq320) {
+
+  }
+  @media screen and (min-width: $mq576) {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border: 0.1rem solid $gray-400;
+    border-radius: 0rem;
+  }
+  @media screen and (min-width: $mq1200) {
+    border: 0rem solid $gray-400;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+  // 內容群組
+  .productContent{
+    height: 100%;
+    @media screen and (min-width: $mq1200) {
+      // padding-right: 0rem; // 4.5rem
+    }
+  }
+  p,li {
+    width: 100%;
+  }
+}
+//*-------------------------*/
+//* Btn
+//*-------------------------*/
+.Btn {
+  // width: 20rem;
+  text-align: center;
+  transition: background-color .3s;
+  border-radius: 0.5rem;
+  @media screen and (min-width: $mq768) {
+    width: 70%;
+    // border-radius: 0 0 2rem 2rem;
+    // border-radius: 5rem;
+    // margin-bottom: 1rem;
+  }
+  @media screen and (min-width: $mq992) {
+    width: 100%;
+    margin-bottom: 0rem;
+  }
+  @media screen and (min-width: $mq1200) {
+    width: 32rem;
+    position: absolute;
+    bottom: 0rem; // 0
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &:hover{
+    background-color: lighten($info, 10%) !important;
+  }
+  a {
+    @include rfs(2.8rem);
+    line-height: 1.5;
+    width: 100%;
+    padding: 0.75rem 2rem; // 0.75rem 5rem
+    letter-spacing: 0.3rem;
+    display: block;
+    color: #fff;
+    font-weight: 500;
+    outline: 0;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    user-drag:none;
+    @media screen and (min-width: $mq375) {
+      @include rfs(2.8rem);
+    }
+    @media screen and (min-width: $mq768) {
+      padding: 1.75rem 5rem; // 5rem
+    }
+    @media screen and (min-width: $mq1024) {
+      @include rfs(2.4rem);
+      padding: 0.75rem 5rem; // 5rem
+    }
+    @include desktop1200{
+      @include rfs(2.8rem);
+      letter-spacing: 0rem;
+      padding: 0.6rem 2rem;
+    }
+  }
+  /// card Btn
+  &.Btn-secondary{
+    @include rfs(2rem);
+    width: 100%;
+    border-radius: 0rem;
+    @media screen and (min-width: $mq1200) {
+      width: auto;
+      position: relative;
+      bottom: 1rem;
+      left: 0;
+      transform: translateX(0%);
+      border-radius: 0.5rem;
+    }
+  }
+}
+//*-------------------------*/
+//* back
+//*-------------------------*/
+.topBack {
+  @include width(5rem , 5rem);
+  position: fixed;
+  color: $white;
+  border-radius: 50%;
+  background-color: $primary;
+  bottom: 6rem;
+  right: 1.5vw;
+  z-index: 99;
+  opacity: 0;
+  &:hover{
+    cursor: pointer;
+  }
+  &::before {
+    @include posCenter;
+    content: "▲";
+    font-size: 2rem;
+  }
+}
+
+
+

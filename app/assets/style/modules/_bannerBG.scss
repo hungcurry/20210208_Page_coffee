@@ -1,0 +1,41 @@
+// <!-- banner -->
+
+// <div class="bannerBG row py-6 py-xl-9 mb-12 mb-md-10">
+//   <div class="container">
+//     <div class="row flex-column justify-content-center align-content-center px-3">
+//           <div class="outer text-center">
+//             <img class="w-auto mx-auto mb-3" src="./assets/images/bannerBG_logo.png" title="iPhone 12 Pro" alt="iPhone 12 Pro">
+//             <h4 class="bannerBG_txt mb-3" title="超瓷晶盾，比任何智慧型手機的玻璃更堅固">超瓷晶盾，比任何智慧型手機的玻璃更堅固</h4>
+//             <img class="w-auto mx-auto" src="./assets/images/bannerBG_pic.png" 
+//             title="金色 iPhone 12 Pro 採用超瓷晶盾材質，比任何智慧型手機的玻璃更堅固" 
+//             alt="金色 iPhone 12 Pro 採用超瓷晶盾材質，比任何智慧型手機的玻璃更堅固">
+//           </div>
+//     </div>
+//   </div>
+// </div>
+
+//*-------------------------*/
+//* banner
+//*-------------------------*/
+
+.bannerBG{
+  @include width (100% , auto);
+  max-width: 100%;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background-attachment: fixed;
+  @media screen and (min-width: $mq1200) {
+    max-width: 192rem;
+  }
+  &.row{
+    background-image: url('../../assets/images/bannerBG.jpg');
+  }
+  .bannerBG_txt{
+    @include rfs(3.5rem);
+    line-height: 1.5;
+    color: $white;
+    text-align: center;
+  }
+}

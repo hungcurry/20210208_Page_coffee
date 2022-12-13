@@ -1,0 +1,206 @@
+
+// <!-- title -->
+
+// <div class="txtBox">
+//   <div class="txtBox__group d-flex flex-column justify-content-center align-items-center">
+//     <small class="txtBox__small">2020最新版</small>
+//     <h1 class="txtBox__mainTitle text-gradient" title="iPhone選購懶人包｜iPhone新機比較，推薦線材、手機殼，一次大公開！">iPhone 選購懶人包</h1>
+//     <img class="txtBox__logo mb-xl-4" src="./assets/images/logo.png" alt="躍升，超越。" title="躍升，超越。">
+//     <h2 class="txtBox__subTitle mb-md-2" title="iPhone 新機比較 | 推薦線材 |手機殼">iPhone 新機比較  |  推薦線材  |  手機殼 </h2>
+//     <p class="txtBox__text text-white mb-2 mb-md-4">一次大公開！</p>
+//     <div class="txtBox__more text-fourthly border border-fourthly rounded-pill px-4 py-1">往下看更多</div>
+//   </div>
+// </div>
+
+
+
+
+//*-------------------------*/
+//* title
+//*-------------------------*/
+
+// 手刻方式
+.txtBox{
+  &__group{
+    padding: 2.2rem 0rem;
+    transform: translateY(-11vw);
+    @media screen and (min-width: $mq540) {
+      transform: translateY(-8vw);
+    }
+    //橫向
+    @media screen and (min-width: $mq576) {
+      transform: translateY(-8vw) scale(0.8);
+    }
+    @media screen and (min-width: $mq768) {
+      transform: translateY(-11vw) scale(1);
+    }
+    @media screen and (min-width: $mq1024) {
+    transform: translateY(0vw);
+    }
+    @media screen and (min-width: $mq1200) {
+      transform: translate(1rem , 0rem);
+    }
+    &::before {
+      // @include width( 100% , 100%);
+      // content: "";
+      // position: absolute;
+      // top: 0;
+      // left: 0;
+      // background-color: transparent;
+      // opacity: 0.6;
+    }
+    &::after {
+      // @include width( 110% , 110%);
+      // content: "";
+      // position: absolute;
+      // top: 50%;
+      // left: 50%;
+      // transform: translate(-50% , -50%);
+      // background-color: transparent;
+      // border: 0.3rem solid $white;
+      // z-index: 1;
+      // @media screen and (min-width: $mq768) {
+      //   @include width( 100% , 100%);
+      //   top: 2.2rem;
+      //   left: 1.6rem;
+      //   transform: translate(0% , 0%);
+      // }
+    }
+  }
+  &__small{
+    @include rfs(2.4rem);
+    line-height: 1.5;
+    color: #b6f0ff;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    z-index: 2;
+    @media screen and (min-width: $mq768) {
+      letter-spacing: 0.3rem;
+    }
+  }
+  &__mainTitle{
+    font-size: 8.5vw;
+    line-height:1.5;
+    letter-spacing: 0rem;
+    font-weight: bold;
+    z-index: 2;
+    // 橫向出現線條解決
+    @media screen and (min-width: $mq576) {
+      letter-spacing: -0.5rem;
+    }
+    @media screen and (min-width: $mq768) {
+      @include rfs(5.6rem);
+      letter-spacing: 0.2rem;
+    }
+    @media screen and (min-width: $mq1024) {
+      @include rfs(4rem);
+    }
+    @media screen and (min-width: $mq1200) {
+      @include rfs(5.6rem);
+    }
+  }
+  // 有線框 做偽元素蓋過去
+  &__mainTitle::before{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 0.6rem;
+    position: relative;
+    top: -2px;
+    background-color: #141517;
+    @media screen and (min-width: $mq768) {
+      display: none;
+    }
+  }
+  // 有線框 做偽元素蓋過去
+  &__mainTitle::after{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 0.6rem;
+    position: relative;
+    bottom: -2px;
+    background-color: #141517;
+    display: block;
+    @media screen and (min-width: $mq768) {
+      display: none;
+    }
+  }
+  
+  
+  &__logo{
+    width: 55%;
+    @media screen and (min-width: $mq768) {
+      width: auto;
+    }
+  }
+  &__New{
+    @include rfs(4.2rem);
+    font-weight: 500;
+    line-height: 1.4;
+    @media screen and (min-width: $mq768) {
+  
+    }
+  }
+  &__subTitle{
+    font-size: 4.5vw;
+    line-height:1.5;
+    width: 100%; // 70%
+    // border-top: 0.2rem solid $black;
+    padding-top: 1.2rem;
+    text-align: center;
+    color: $white;
+    letter-spacing: 0.1rem;
+    z-index: 2;
+    @media screen and (min-width: $mq576) {
+      letter-spacing: 0;
+    }
+    @media screen and (min-width: $mq768) {
+      @include rfs(3.2rem);
+      width: 100%; // 37.5rem
+      padding-top: 2.2rem;
+      letter-spacing: 0.4rem;
+    }
+    @media screen and (min-width: $mq1024) {
+      @include rfs(2.7rem);
+      letter-spacing: 0.1rem;
+    }
+    @media screen and (min-width: $mq1200) {
+      @include rfs(3.2rem);
+      letter-spacing: 0.35rem;
+    }
+    &:before{
+      content: '';
+      display: block;
+      width: 70%;
+      height: 0.2rem;
+      background-color: #15588f;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+      margin-bottom: 0.5rem;
+      @media screen and (min-width: $mq1200) {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+  &__text{
+    font-size: 4.5vw;
+    letter-spacing: 0.8rem;
+    @media screen and (min-width: $mq768) {
+      @include rfs(2.5rem);
+    }
+    @media screen and (min-width: $mq1200) {
+      margin-bottom: 1.5rem;
+      margin-left: 2rem;
+    }
+  }
+  &__more{
+    font-size: 4.5vw;
+    letter-spacing: 0.2rem;
+    user-select: none;
+    @media screen and (min-width: $mq768) {
+      @include rfs(2.5rem);
+    }
+  }
+}

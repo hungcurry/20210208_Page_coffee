@@ -1,0 +1,118 @@
+// <!-- 目錄 -->
+
+// <div class="col-12 col-md-10 col-xl-11 mb-xl-9">
+//   <ul class="listDirectory d-md-flex flex-md-wrap 
+//   justify-content-md-between justify-content-lg-center">
+//     <li class="listDirectory__list d-flex justify-content-center align-items-center js-anc01 mr-md-4 mr-lg-8">
+//       <img class="listDirectory__icon icon-pattern01" src="./assets/images/icon-pattern01.svg" title="icon" alt="icon">
+//       <a class="listDirectory__link listDirectory__link01" title="彌月禮物選購要點"
+//         href="javascript:;">彌月禮物選購要點</a>
+//     </li>
+//     <li class="listDirectory__list d-flex justify-content-center align-items-center js-anc02">
+//       <img class="listDirectory__icon icon-pattern02" src="./assets/images/icon-pattern02.svg" title="icon" alt="icon">
+//       <a class="listDirectory__link listDirectory__link02" title="10款彌月禮物人推薦"
+//         href="javascript:;">10款彌月禮物人推薦</a>
+//     </li>
+//     <li class="listDirectory__list d-flex justify-content-center align-items-center js-anc03 mr-md-4 mr-lg-8 mb-md-0">
+//       <img class="listDirectory__icon icon-pattern03" src="./assets/images/icon-pattern03.svg" title="icon" alt="icon">
+//       <a class="listDirectory__link listDirectory__link03" title="彌月禮不踩雷！避開NG禮" 
+//         href="javascript:;">彌月禮不踩雷！<br>避開NG禮</a>
+//     </li>
+//     <li class="listDirectory__list d-flex justify-content-center align-items-center js-anc04 mb-0">
+//       <img class="listDirectory__icon icon-pattern04" src="./assets/images/icon-pattern04.svg" title="icon" alt="icon">
+//       <a class="listDirectory__link listDirectory__link04" title="彌月紅包行情價" 
+//         href="javascript:;">彌月紅包行情價</a>
+//     </li>
+//   </ul>
+// </div>
+
+//*-------------------------*/
+//* 目錄清單
+//*-------------------------*/
+
+.listDirectory{
+  // padding: 1rem 0rem; 
+  @media screen and (min-width: $mq375) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  @media screen and (min-width: $mq768) {
+    padding:0;
+  }
+  @media screen and (min-width: $mq1200) {
+    padding-top: 2.5rem;
+  }
+  // li
+  &__list{
+    margin-bottom: 2rem;
+    background-color: $bg-secondary;
+    border-radius: 3.5rem;
+    height: 4.8rem;
+    position: relative;
+    cursor: pointer;
+    @media screen and (min-width: $mq768) {
+      width: 27rem;
+    }
+    @media screen and (min-width: $mq1200) {
+      @include width(35rem , 7rem);
+      margin-bottom: 4.5rem;
+    }
+  }
+  // href
+  &__link{
+    color: $black;
+    text-align: center;
+    margin-left: 2rem; // 1rem;
+    @media screen and (min-width: $mq768) {
+      padding: 0rem 1rem;
+      margin-left: 3rem;
+    }
+    @media screen and (min-width: $mq1200) {
+      @include fontSize(2.2rem , 1.7);
+      margin-left: 4.5rem;
+    }
+  }
+  &__link03{
+    margin-left: 0.4rem;
+    // line-height: 1.3;
+    @media screen and (min-width: $mq768) {
+      margin-left: 1.2rem;
+    }
+    @media screen and (min-width: $mq1200) {
+      margin-left: 4.2rem;
+    }
+  }
+  &__link04{
+    margin-left: 3.4rem;
+    // line-height: 1.3;
+    @media screen and (min-width: $mq768) {
+      margin-left: 4.6rem;
+    }
+    @media screen and (min-width: $mq1200) {
+      margin-left: 5rem;
+    }
+  }
+  &__link05{
+    margin-left: 0.2rem;
+    // line-height: 1.3;
+    @media screen and (min-width: $mq768) {
+      margin-left: 1.2rem;
+    }
+    @media screen and (min-width: $mq1200) {
+      margin-left: 3.4rem;
+    }
+  }
+  &__link:hover{
+    color: $primary;
+  }
+  // 圖片
+  &__icon{
+    @include width(4.8rem , 4.8rem);
+    position: absolute;
+    top: 0;
+    left: 0;
+    @media screen and (min-width: $mq1200) {
+      @include width(7rem , 7rem);
+    }
+  }
+}

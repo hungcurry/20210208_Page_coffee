@@ -1,0 +1,183 @@
+
+      // <!-- cubeCake -->
+      // <div class="cubeCake mb-8 mb-lg-15 mt-xl-9">
+      //   <h3 title="猜你可能需要：">猜<span class="keyword keyword-lg">你</span>可能需要：</h3>
+      //   <div class="itemGroup d-md-flex">
+      //     <!-- 大圖 -->
+      //     <div class="cubeLeft">
+      //       <div class="item mb-4 mb-md-0">
+      //         <div class="cubeCake__item cubeCake__item-lg">
+      //           <img src="https://img.udn.com/art/04_im/20200615_content_gulide/images/group01.jpg" title="男子將新鮮食材放在果汁機中正打算打健康蔬果汁" alt="男子將新鮮食材放在果汁機中正打算打健康蔬果汁">
+      //         </div>
+      //         <div class="Btn align-self-center mb-xl-0 mt-xl-0">
+      //           <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=T_001_001_014_006" target="_blank" rel="noreferrer noopener" title="貴夫人隨行杯果汁機, 隨行果汁機">看更多果汁機</a>
+      //         </div>
+      //       </div>
+      //     </div>
+      //     <!-- 小圖 -->
+      //     <div class="cubeRight d-md-flex flex-wrap align-content-between">
+      //         <div class="cubeRight__inner d-flex justify-content-between">
+      //           <div class="item mb-4 mb-md-0">
+      //             <div class="cubeCake__item cubeCake__item-sm">
+      //               <img src="https://img.udn.com/art/04_im/20200615_content_gulide/images/group02.jpg" title="男子正將一匙乳清蛋白粉準備放入水瓶中" alt="男子正將一匙乳清蛋白粉準備放入水瓶中">
+      //             </div>
+      //             <div class="Btn align-self-center mb-xl-0 mt-xl-0">
+      //               <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=N_007_005_001" target="_blank" rel="noreferrer noopener" title="乳清蛋白">看更多乳清蛋白</a>
+      //             </div>
+      //           </div>
+      //           <div class="item mb-4 mb-md-0">
+      //             <div class="cubeCake__item cubeCake__item-sm">
+      //               <img src="https://img.udn.com/art/04_im/20200615_content_gulide/images/group03.jpg" title="各種新鮮水果放在桌上" alt="各種新鮮水果放在桌上">
+      //             </div>
+      //             <div class="Btn align-self-center mb-xl-0 mt-xl-0">
+      //               <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=J_008_004_001" target="_blank" rel="noreferrer noopener" title="水果狼,水果箱,優鮮配免運">看更多熱銷水果</a>
+      //             </div>
+      //           </div>
+      //         </div>
+      //         <div class="cubeRight__inner d-flex justify-content-between">
+      //           <div class="item">
+      //             <div class="cubeCake__item cubeCake__item-sm">
+      //               <img src="https://img.udn.com/art/04_im/20200615_content_gulide/images/group04.jpg" title="桌上放著多款綜合果汁" alt="桌上放著多款綜合果汁">
+      //             </div>
+      //             <div class="Btn align-self-center mb-xl-0 mt-xl-0">
+      //               <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=J_002_018_013" target="_blank" rel="noreferrer noopener" title="綜合果汁">看更多綜合果汁</a>
+      //             </div>
+      //           </div>
+      //           <div class="item">
+      //             <div class="cubeCake__item cubeCake__item-sm">
+      //               <img src="https://img.udn.com/art/04_im/20200615_content_gulide/images/group05.jpg" title="蔬果堆放在桌上" alt="蔬果堆放在桌上">
+      //             </div>
+      //             <div class="Btn align-self-center mb-xl-0 mt-xl-0">
+      //               <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=J_008_004_002" target="_blank" rel="noreferrer noopener" title="有機蔬菜,蔬菜箱">看更多蔬菜</a>
+      //             </div>
+      //           </div>
+      //         </div>
+      //     </div>
+      //   </div>
+      // </div>
+
+
+
+
+
+//*-------------------------*/
+//* cubeCake
+//*-------------------------*/
+
+.cubeCake{
+  h3 {
+    @include fontSize(5.5vw , 1.5);
+    width: 90%;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+    color: $black;
+    border-bottom: 0.1rem solid $primary;
+    padding-bottom: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2rem;
+    @media screen and (min-width: $mq768) {
+      width: 95%;
+      @include fontSize(2.8rem , 1.5);
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    @media screen and (min-width: $mq1024) {
+      height: 11.7rem;
+      text-align: center;
+      border-bottom: 0rem solid $primary;
+      padding-bottom: 0rem;
+      margin-bottom: 3.2rem;
+    }
+  }
+  .keyword:before{
+    content: "";
+    display: block;
+    width: 7.9rem;
+    height: 5.8rem;
+    position: absolute;
+    top: 0;
+    left: -50%;
+    z-index: -1;
+    background-position: center 0rem;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: $white;
+    background-image: url('../../assets/images/symbol2.png');
+    @media screen and (min-width: $mq1024) {
+      width: 15.8rem;
+      height: 11.6rem;
+      top: -1rem;
+      left: -105%;
+    }
+  }
+  .itemGroup{
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    @media screen and (min-width: $mq1200) {
+
+    }
+  }
+  .cubeLeft{
+    flex-basis: 50%;
+    padding: 0 1rem 0 1rem ;
+    @media screen and (min-width: $mq768) {
+      padding: 0 1.5rem 0 0rem ;
+    }
+    .item{
+      width: 100%;
+    }
+  }
+  .cubeRight{
+    flex-basis: 50%;
+    padding: 0 0.5rem 0 0.5rem ;
+    @media screen and (min-width: $mq768) {
+      padding: 0;
+    }
+    .item{
+      width: 50%;
+      padding: 0 0.5rem 0 0.5rem;
+      @media screen and (min-width: $mq768) {
+        padding: 0 1.5rem 0 0rem ;
+      }
+    }
+    .item:nth-child(1),
+    .item:nth-child(3){
+      @media screen and (min-width: $mq768) {
+
+      }
+    }
+  }
+  //圖框
+  .cubeCake__item{
+    padding: 1rem;
+    background-color: $bg-fourthly;
+    @media screen and (min-width: $mq768) {
+      padding: 1.5rem;
+    }
+  }
+  //大圖
+  .cubeCake__item-lg{
+    border-radius: 5rem 0 0 0;
+    @media screen and (min-width: $mq768) {
+      border-radius: 10rem 0 0 0;
+    }
+    img{
+      width:100%;
+      border-radius: 5rem 0 0 0;
+      @media screen and (min-width: $mq768) {
+        border-radius: 10rem 0 0 0;
+      }
+    }
+  }
+  //小圖
+  .cubeCake__item-sm{
+    width: 100%;
+  }
+}
+

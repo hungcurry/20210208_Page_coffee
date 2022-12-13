@@ -1,0 +1,98 @@
+
+// 更多活動
+
+// <footer class="moreActivity bg-secondary">
+//   <div class="moreTxt">
+//     <div class="container">
+//       <div class="row">
+//         <div class="col-12">
+//           <h5 class="moreTxt__title pl-xl-3">還看不夠嗎？ 
+//             <span class="moreTxt__detail">以下小編推薦更多精選文章：</span></h5>
+//         </div>
+//       </div>
+//     </div>
+//   </div>
+//   <!-- 更多活動 -->
+//   <div class="container pt-3 py-md-3 pt-lg-6 pb-lg-5">
+//     <div class="row py-lg-2">
+//         <div class="col-12 col-md-6 mb-2">
+//           <a class="moreActivity__link" href="https://shopping.udn.com/udnmall/hot/冷氣機_20200615.html" 
+//           target="_blank" rel="noreferrer noopener" title="冷氣機推薦指南">
+//             <img class="moreActivity__img" src="./assets/images/footer-bn01.jpg" alt="冷氣機推薦指南">
+//           </a>
+//         </div>
+//         <div class="col-12 col-md-6 mb-2">
+//           <a class="moreActivity__link" href="https://shopping.udn.com/udnmall/hot/筆電_20200803.html" 
+//           target="_blank" rel="noreferrer noopener" title="輕薄筆電、文書筆電、電競筆電推薦">
+//             <img class="moreActivity__img" src="./assets/images/footer-bn02.jpg" alt="輕薄筆電、文書筆電、電競筆電推薦">
+//           </a>
+//         </div>
+//     </div>
+//     <div class="row py-lg-2">
+//         <div class="col-12 col-md-6 mb-2">
+//           <a class="moreActivity__link" href="https://shopping.udn.com/udnmall/hot/運動吃什麼_20200720.html" 
+//           target="_blank" rel="noreferrer noopener" title="運動前、運動後吃什麼">
+//             <img class="moreActivity__img" src="./assets/images/footer-bn03.jpg" alt="運動前、運動後吃什麼">
+//           </a>
+//         </div>
+//         <div class="col-12 col-md-6 mb-2">
+//           <a class="moreActivity__link" href="https://shopping.udn.com/udnmall/hot/空氣清淨機_20200817.html" 
+//           target="_blank" rel="noreferrer noopener" title="10大熱銷空氣清淨機推薦">
+//             <img class="moreActivity__img" src="./assets/images/footer-bn04.jpg" alt="10大熱銷空氣清淨機推薦">
+//           </a>
+//         </div>
+//     </div>
+//   </div>
+// </footer>
+
+//*-------------------------*/
+//* moreActivity
+//*-------------------------*/
+
+.moreActivity{
+  background-color: $bg-secondary;
+  // 活動文字
+  .moreTxt{
+    width: 100%;
+    max-width: 100%;
+    background-color: $primary;
+    padding: 1.5rem 0rem;
+    @media screen and (min-width: $mq1200) {
+      // padding: 4.5rem 0rem;
+    }
+    &:after{
+      // content: "";
+      // display: block;
+      // width:100%;
+      // height: 0.2rem;
+      // background-color: $secondary;
+      // position: absolute;
+      // left: 0;
+      // bottom: 1rem;
+    }
+    &__title{
+      @include fontSize(1.6rem , 1.5);
+      color: $white;
+      @media screen and (min-width: $mq1200) {
+        @include fontSize(1.8rem , 1.5);
+      }
+    }
+    &__detail{
+      color: $bg-fourthly;
+    }
+  }
+  // 更多活動
+  .moreActivity__link{
+    display: block;
+  }
+  .moreActivity__img{
+    border: 0.5rem solid $gray-500;
+    transition: all 0.3s;
+    margin: auto;
+    &:hover{
+      border: 0.5rem solid $primary;
+    }
+  }
+}
+
+

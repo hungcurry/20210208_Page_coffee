@@ -1,0 +1,93 @@
+//注意說明
+
+  // <div class="container-fluid bg-white mb-xl-0">
+  //   <div class="row">
+  //     <div class="noticeText">
+  //       <h4 class="h2" title="舉例"><strong>舉例：</strong></h4>
+  //       <div class="col-12">
+  //         <ul class="pl-3">
+  //           <li class="title text-primary font-weight-normal">
+  //             (一)CADR值 200 的機種，空間高度 3m，適用坪數是多少？
+  //           </li>
+  //           <li class="disc">500 (CADR) ÷ 2.8 ÷ 3 × 0.3025 = 18 坪</li>
+  //           <li class="disc">200 ÷ 3 ÷ 5 × 0.3025 = 4 坪</li>
+  //           <li class="disc">200 ÷ 3 ÷ 3 × 0.3025 = 7 坪</li>
+  //           <li class="disc mb-2">比較標準的是用在 4 坪的空間，可以使室內汙染物保持在較低的濃度，若用在 7 坪的空間，相對淨化的強度沒這麼好，但仍在可接受範圍內。</li>
+  //           <li class="title text-primary font-weight-normal">
+  //             (二)室內 15 坪，樓層高度 3 m，要挑多少 CADR 值機種才夠用？
+  //           </li>
+  //           <li class="disc">15 ÷ 0.3025 × 3 × 3 = 446 CADR</li>
+  //         </ul>
+  //         <!-- <p class="border-top"></p> -->
+  //       </div>
+  //     </div>
+  //   </div>
+  // </div>
+
+
+  // <div class="container bg-white">
+  //   <div class="row">
+  //       <div class="col-12">
+  //         <div class="noticeText border-top-5">
+  //           <div class="d-flex align-items-start align-items-md-center pt-3 pt-xl-4 pb-md-5">
+  //             <img class="remind icon-pattern05" src="./assets/images/icon-pattern03.svg" title="remind" alt="remind">
+  //             <p class="remind__Text">若覺得這樣很普通，也可以限制一個相當低的金額 ( 100 元以內 ) 來交換禮物，這樣的限制，可以激發大家的創意發想，用少少的金額換一個大大的樂趣，看大家究竟可以用低金額買到什麼禮物！</p>
+  //           </div>
+  //         </div>
+  //       </div>
+  //   </div>
+  // </div>
+
+
+  // <div class="container bg-white">
+  //   <div class="row">
+  //       <div class="col-12">
+  //         <div class="noticeText">
+  //           <div class="d-flex align-items-center mb-2">
+  //             <img class="remind2 icon-pattern06" src="./20201214/images/icon-pattern06.svg" title="remind" alt="remind">
+  //             <h4 class="fz-22 text-secondary" title="舉例">舉例：</h4>
+  //           </div>
+  //           <p class="border-top-5 pt-3 pt-lg-4">一般人平均洗澡淋浴用水量約 5 ~ 8 加侖，可依照家中的使用狀況帶入相關條件值計算，假設是 4 口之家，全家一次洗澡約用 20 ~ 32 加侖，市面上的電熱水器多用加侖單位計算，故建議購買 32 加侖 ( 1 加侖 = 3.8 公升) 的儲熱型電熱水器。</p>
+  //           <p class="remind-Text text-primary">*以上供應使用人數僅供參考計算，仍應依實際個人使用量多寡而定，同瓦斯熱水器挑選，建議選大不選小，以確保有穩定的水溫可供使用。</p>
+  //         </div>
+  //       </div>
+  //   </div>
+  // </div>
+  
+//*-------------------------*/
+//* noticeText
+//*-------------------------*/
+
+.noticeText{
+  width:100%;
+  max-width: 96rem; 
+  background-color: $white;
+  margin: 0 auto;
+  margin-bottom: 4rem;  // 2rem
+  @media screen and (min-width: $mq768) {
+    // padding-left: 2.4rem;
+    // padding-right: 2.4rem;
+    margin-bottom: 5rem; 
+  }
+  @media screen and (min-width: $mq1024) {
+    // margin-bottom: 4.5rem; 
+  }
+  @media screen and (min-width: $mq1200) {
+    max-width: 120rem;
+  }
+  // 說明
+  h4{
+    // @include fontSize(2rem , 1.7);
+    // font-weight: 400;
+    // text-align: left;
+    // padding-left: 1rem;
+    // margin-bottom: 1rem;
+    // @media screen and (min-width: $mq768) {
+    //   @include fontSize(2.2rem , 3.6rem);
+    // }
+    // strong{
+    //   color: $primary;
+    //   font-weight: 500;
+    // }
+  }
+}

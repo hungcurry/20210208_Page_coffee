@@ -1,0 +1,305 @@
+
+// <!-- 普通表格 -->
+// <div class="container">
+//   <div class="row">
+//     <div class="col-12">
+//       <table class="table my-3 my-xl-6">
+//         <!-- <caption class="text-right">彌月紅包的金額表</caption> -->
+//         <thead class="table-primary">
+//           <tr>
+//             <th scope="col" colspan="2">交情</th>
+//             <th>紅包金額（元）</th>
+//           </tr>
+//         </thead>
+//         <tbody>
+//           <tr>
+//             <td colspan="2">一般交情朋友/同事</td>
+//             <td>600</td>
+//           </tr>
+//           <tr>
+//             <td colspan="2">交情不錯、好朋友</td>
+//             <td>1,200或1,600</td>
+//           </tr>
+//           <tr>
+//             <td rowspan="2">親戚</td>
+//             <td>長輩</td>
+//             <td>2,000-3,600等吉祥雙數金額</td>
+//           </tr>
+//           <tr>
+//             <td>平輩</td>
+//             <td>600-1,200</td>
+//           </tr>
+//         </tbody>
+//       </table>
+//     </div>
+//   </div>
+// </div>
+
+
+// <!-- 半欄表格 -->
+// <div class="col-12 col-lg-6">
+//   <table class="table">
+//     <thead class="table-thirdly">
+//       <tr>
+//         <td width="500px">使用空間</td>
+//         <td width="310px">建議公升數</td>
+//         <td width="420px">挑選熱水器</td>
+//       </tr>
+//     </thead>
+//     <tbody>
+//       <tr>
+//         <td>只有1 間浴室</td>
+//         <td>10 ~   12 公升</td>
+//         <td><a href="#subtitle01" class="text-primary">點看推薦▶</a></td>
+//       </tr>
+//       <tr>
+//         <td>1 間浴室 + 1 間廚房</td>
+//         <td>13 ~   16 公升</td>
+//         <td><a href="#subtitle02" class="text-primary">點看推薦▶</a></td>
+//       </tr>
+//       <tr>
+//         <td>2 間浴室 + 1 間廚房</td>
+//         <td>16 公升以上</td>
+//         <td><a href="#subtitle03" class="text-primary">點看推薦▶</a></td>
+//       </tr>
+//     </tbody>
+//   </table>
+// </div>
+
+// <!-- 捲動表格 -->
+// <div class="container">
+//   <div class="row mb-8 mb-md-10">
+//     <div class="col-12">
+//       <p class="text-primary d-xl-none">*滑動看更多</p>
+//       <div class="table-over-hidden">
+//         <div class="table-responsive-scroll">
+//           <table class="table min-w-xl">
+//             <thead class="table-thirdly">
+//               <tr>
+//                 <td>熱水器種類</td>
+//                 <td colspan="2">瓦斯熱水器</td>
+//                 <td colspan="2">電熱水器</td>
+//               </tr>
+//             </thead>
+//             <tbody>
+//               <tr>
+//                 <td class="table__td">熱水器類型</td>
+//                 <td class="table__td">傳統型</td>
+//                 <td class="table__td">強制排氣型</td>
+//                 <td class="table__td">瞬熱型</td>
+//                 <td class="table__td">儲熱型</td>
+//               </tr>
+//               <tr>
+//                 <td>熱水加熱速度</td>
+//                 <td>加熱速度快</td>
+//                 <td>加熱速度快</td>
+//                 <td>加熱速度快</td>
+//                 <td>加熱速度慢</td>
+//               </tr>
+//               <tr>
+//                 <td>耗電量</td>
+//                 <td>相對電熱水器<br><span class="text-primary">較省電</span></td>
+//                 <td>相對電熱水器<br><span class="text-primary">較省電</span></td>
+//                 <td>耗電量較大</td>
+//                 <td>耗電量較大</td>
+//               </tr>
+//               <tr>
+//                 <td>安裝費用</td>
+//                 <td><span class="text-primary">費用較低</span></td>
+//                 <td><span class="text-primary">費用較低</span></td>
+//                 <td>費用較高</td>
+//                 <td>費用較高</td>
+//               </tr>
+//               <tr>
+//                 <td>安裝環境需求</td>
+//                 <td>非密閉、無堆積雜物、<br>通風佳的室外</td>
+//                 <td>不受通風性限制，<br>室內外皆可</td>
+//                 <td>不受通風性限制，<br>室內外皆可</td>
+//                 <td>不受通風性限制，<br>室內外皆可</td>
+//               </tr>
+//               <tr>
+//                 <td>使用安全性</td>
+//                 <td>瓦斯燃燒不全<br>會有一氧化碳中毒的風險</td>
+//                 <td>瓦斯燃燒不全<br>會有一氧化碳中毒的風險</td>
+//                 <td>要注意用電負載量，<br>以免超過負荷造成跳電</td>
+//                 <td>要注意用電負載量，<br>以免超過負荷造成跳電</td>
+//               </tr>
+//               <tr>
+//                 <td>優點</td>
+//                 <td><span class="text-primary">價格便宜</span></td>
+//                 <td><span class="text-primary">相對</span>傳統型<span class="text-primary"><br>安全，最多人使用</span></td>
+//                 <td><span class="text-primary">體積輕巧</span></td>
+//                 <td><span class="text-primary">無一氧化碳中毒風險</span></td>
+//               </tr>
+//               <tr>
+//                 <td>缺點</td>
+//                 <td>一氧化碳容易逸散不完全</td>
+//                 <td>需鑽洞或打牆<br>加裝排氣管，花費較高</td>
+//                 <td>耗電量大</td>
+//                 <td>須先預熱，較耗電能</td>
+//               </tr>
+//           </tbody>
+//           </table>
+//         </div>
+//       </div>
+//     </div>
+//   </div>
+// </div>
+
+// <!-- 捲動表格 -->
+// <div class="container">
+//   <div class="row">
+//     <div class="col-12">
+//       <div class="table-over-hidden">
+//         <div class="table-responsive-scroll">
+//           <table class="table table-striped table-bordered">
+//             <caption>生酮飲食、間歇性斷食表格比較</caption>
+//             <thead class="thead-primary">
+//               <tr>
+//                 <th scope="col" width="22%">瘦身方法</th>
+//                 <th scope="col" width="30%">生酮飲食法</th>
+//                 <th scope="col" width="30%">間歇性斷食法</th>
+//                 <th scope="col">瘦身方法</th>
+//                 <th scope="col">瘦身方法</th>
+//                 <th scope="col">瘦身方法</th>
+//                 <th scope="col">瘦身方法</th>
+//                 <th scope="col">瘦身方法</th>
+//                 <th scope="col">瘦身方法</th>
+//               </tr>
+//             </thead>
+//             <tbody>
+//               <tr class="table-light">
+//                 <th scope="row" rowspan="2">飲食原則</th>
+//                 <td>嚴格控制碳水化合物的攝取量</td>
+//                 <td>不特別控制飲食類別</td>
+//                 <td>@mdo</td>
+//                 <td>Mark</td>
+//                 <td>Mark</td>
+//                 <td>@mdo</td>
+//                 <td>Mark</td>
+//                 <td>Mark</td>
+//               </tr>
+//               <tr class="table-light">
+//                 <td>搭配大量的油脂食物和適量的蛋白質</td>
+//                 <td>依照自己想要的時間進食，增加斷食的時間</td>
+//                 <td>@fat</td>
+//                 <td>Jacob</td>
+//                 <td>Jacob</td>
+//                 <td>@fat</td>
+//                 <td>Jacob</td>
+//                 <td>Jacob</td>
+//               </tr>
+  
+//               <tr class="table-light">
+//                 <th scope="row" rowspan="2">注意事項</th>
+//                 <td>容易有血脂肪飆升</td>
+//                 <td>剛接觸斷食法容易感到飢餓、無力</td>
+//                 <td>@mdo</td>
+//                 <td>Mark</td>
+//                 <td>Mark</td>
+//                 <td>@mdo</td>
+//                 <td>Mark</td>
+//                 <td>Mark</td>
+//               </tr>
+//               <tr class="table-light">
+//                 <!-- <th scope="row">2</th> -->
+//                 <td>要花時間動手料理</td>
+//                 <td></td>
+//                 <td>@fat</td>
+//                 <td>Jacob</td>
+//                 <td>Jacob</td>
+//                 <td>@fat</td>
+//                 <td>Jacob</td>
+//                 <td>Jacob</td>
+//               </tr>
+//             </tbody>
+//           </table>
+//         </div>
+//       </div>
+//     </div>
+//   </div>
+// </div>
+
+//*-------------------------*/
+//* table
+//*-------------------------*/
+
+.table-over-hidden{
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  .table-responsive-scroll{
+    @media screen and (max-width: $mq1024) {
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+  }
+}
+.table{
+  width: 100%;
+  max-width: 120rem; 
+  // min-width: 110rem;
+  text-align: center;
+  color:$black;;
+  margin: auto;
+  font-size: 1.5rem;
+  @media screen and (min-width: $mq768) {
+    font-size: 1.8rem;
+    // width: 90%;
+    // font-size: 2.1rem ;
+  }
+  @media screen and (min-width: $mq1200) {
+    // width: 90%;
+    // font-size: 2.1rem ;
+  }
+  caption{
+    color: $black;
+  }
+  //thead
+  .table-primary{
+    background-color: $primary;
+    color: $white;
+  }
+  thead th,
+  tbody th {
+    padding: 0.6rem 0 ;
+    text-align: center;
+  }
+  tbody th,
+  tbody td {
+    font-weight: 400;
+    vertical-align: middle;
+  }
+  // 線框
+  th,td{
+    border-top: 0.5rem solid $white;
+    border-right: 0.5rem solid $white;
+  }
+  th:last-child,
+  td:last-child{
+    border-right: 0rem solid $white;
+  }
+  // 背景顏色
+  tbody tr {
+    // background-color: darken($thirdly, 0%); // 1.5%
+  }
+  .table__td:nth-child(1){
+    width: 7.5rem;
+  }
+  .table__td:nth-child(2){
+    width: 12rem;
+  }
+  .table__td:nth-child(3){
+    width: 14rem;
+  }
+  .table__td:nth-child(4){
+    width: 20rem;
+  }
+  .table__td:nth-child(5){
+    width: 20rem;
+  }
+}
+

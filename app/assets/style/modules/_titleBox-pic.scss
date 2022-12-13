@@ -1,0 +1,130 @@
+
+// <!-- title -->
+
+// <div class="txtBox">
+//   <h1 class="text-hide" title="iPhone選購懶人包｜iPhone新機比較，推薦線材、手機殼，一次大公開！">
+//     iPhone選購懶人包｜iPhone新機比較，推薦線材、手機殼，一次大公開！
+//     <img class="txtBox__img md-show" src="./assets/images/title-768.png" 
+//     alt="iPhone選購懶人包｜iPhone新機比較，推薦線材、手機殼，一次大公開！">
+//     <img class="txtBox__img lg-show" src="./assets/images/title.png" 
+//     alt="iPhone選購懶人包｜iPhone新機比較，推薦線材、手機殼，一次大公開！">
+//   </h1>
+// </div>
+
+
+//*-------------------------*/
+//* title
+//*-------------------------*/
+
+// 圖片方式
+.txtBox{
+  width: auto; // 100%;
+  position: relative;
+  top: 0; 
+  left: 0;
+  z-index: 10;
+  @media screen and (min-width: $mq375) {
+    // top: 1%; // 2.5%
+  }
+  @media screen and (min-width: $mq411) {
+    // top: 1%; // 6.5%
+  }
+  @media screen and (min-width: $mq414) {
+    // top: 1%; // 5.5%
+  }
+  //橫向
+  @media screen and (min-width: $mq576) {
+    width: 100%;
+  }
+  @media screen and (min-width: $mq768) {
+
+  }
+  @media screen and (min-width: $mq1024) {
+    width: auto; // auto
+    // top: 0; // -10.5%
+  }
+  @media screen and (min-width: $mq1200) {
+    // top: 0;
+  }
+  //主標圖
+  &__img{
+    margin: auto;
+    width: 100%;
+    // transform: translate(0rem , -5.5rem);
+    @media screen and (min-width: $mq414) {
+      // transform: translate(0rem , -5.5rem);
+    }
+    @media screen and (min-width: $mq540) {
+      width: 90%;
+    }
+     //橫向
+    @media screen and (min-width: $mq576) {
+      //width: 90%;
+      // transform: translate(0rem , -8rem);
+    }
+    @media screen and (min-width: $mq768) {
+      width: 100%;
+      // transform: translate(0rem , -12rem);
+    }
+    @media screen and (min-width: $mq1024) {
+      // width: 85%;
+      transform: translate(0rem , 0rem);
+    }
+    @media screen and (min-width: $mq1200) {
+      width: 100%;
+      // transform: translate(0rem , 0rem);
+    }
+    // 手機
+    &.sm-show{
+      display: block;
+      @media screen and (min-width: $mq768) {
+        // display: block;
+      }
+      @media screen and (min-width: $mq1200) {
+        display: none;
+      }
+    }
+    // 平板
+    &.md-show{
+      display: none;
+      @media screen and (min-width: $mq768) {
+        display: block;
+      }
+      @media screen and (min-width: $mq1200) {
+        display: none;
+      }
+    }
+    // 桌機
+    &.lg-show{
+      display: none;
+      @media screen and (min-width: $mq1200) {
+        display: block;
+      }
+    }
+  }
+  //裝飾
+  &__decoration{
+    width: 100%;
+    position: absolute;
+    bottom: -5rem;
+    right: 0;
+    @media screen and (min-width: $mq768) {
+
+    }
+    @media screen and (min-width: $mq1024) {
+      bottom: -4rem;
+    }
+  }
+  &__decoration__img{
+    width: 100% ;
+    display: inline-block;
+    text-align: center;
+    @media screen and (min-width: $mq768) {
+      transform: translateX(3%);
+    }
+    @media screen and (min-width: $mq1024) {
+      width: 90% ;
+      transform: translateX(8%);
+    }
+  }
+}
